@@ -1,9 +1,9 @@
 package no.ntnu.tdt4165
 package part1
 
-object Task1 {
+object Task1:
   def generateArray(): Array[Int] =
-    val arr = new Array[Int](50)
+    val arr = Array[Int](50)
     for i <- 1 to 50 do arr(i - 1) = i
     arr
 
@@ -20,4 +20,4 @@ object Task1 {
     case n if n == BigInt(0) => 0
     case n if n == BigInt(1) => 1
     case _ => fibonacci(n - 1) + fibonacci(n - 2)
-}
+

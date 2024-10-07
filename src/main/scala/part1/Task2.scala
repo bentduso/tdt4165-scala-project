@@ -1,7 +1,7 @@
 package no.ntnu.tdt4165
 package part1
 
-object Task2 {
+object Task2:
   def quadraticEquation(a: Float, b: Float, c: Float): (Boolean, Option[Double], Option[Double]) =
     val discriminant = b * b - 4.0 * a * c
 
@@ -13,4 +13,4 @@ object Task2 {
 
   def quadratic(a: Float, b: Float, c: Float): Float => Float =
     (x: Float) => a * x * x + b * x + c
-}
+
