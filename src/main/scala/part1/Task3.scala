@@ -4,7 +4,7 @@ package part1
 import java.util.concurrent.atomic.AtomicReference
 
 object Task3:
-  def createThread(fn: () => Unit): Thread = new Thread(() => fn())
+  def createThread(fn: () => Unit): Thread = Thread(() => fn())
 
 object ConcurrencyTroubles:
   private case class State(value1: Int, value2: Int)
