@@ -13,4 +13,4 @@ object Task2:
 
   def quadratic(a: Float, b: Float, c: Float): Float => Float =
     (x: Float) => a * x * x + b * x + c
-
+    

@@ -20,4 +20,3 @@ object Task1:
     case n if n == BigInt(0) => 0
     case n if n == BigInt(1) => 1
     case _ => fibonacci(n - 1) + fibonacci(n - 2)
-
