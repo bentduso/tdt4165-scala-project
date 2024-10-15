@@ -1,4 +1,3 @@
-package no.ntnu.tdt4165
 package part1
 
 object Task1:
