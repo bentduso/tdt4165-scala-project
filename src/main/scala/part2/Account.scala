@@ -6,7 +6,7 @@ package part2
  * @param code    the unique code identifying the account
  * @param balance the initial balance of the account
  */
-class Account(val code: String, val balance: Double) {
+class Account(val code: String, val balance: Double):
   /**
    * Withdraws an amount from the account. If the amount is negative,
    * or if it exceeds the available balance, it returns an error message. If successful,
@@ -30,4 +30,4 @@ class Account(val code: String, val balance: Double) {
   def deposit(amount: Double): Either[String, Account] =
     if (amount < 0) Left("Invalid amount: deposit amount must be positive")
     else Right(Account(code, balance + amount))
-}
+    
