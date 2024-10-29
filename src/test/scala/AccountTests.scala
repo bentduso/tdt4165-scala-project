@@ -199,4 +199,3 @@ class AccountTransferTest extends AnyFunSuite:
     assert(bank.completedTransactions.size == submitted)
     assert(bank.transactionsPool.isEmpty)
   }
-
